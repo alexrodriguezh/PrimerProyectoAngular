@@ -1,0 +1,7 @@
+<h1>Lista de Productos</h1>
+<ul>
+  <li *ngFor="let caracteristicas of items">{{caracteristicas.nombre}} - {{caracteristicas.color}} - {{caracteristicas.marca}} - <strong>S/ {{caracteristicas.precio}}</strong>  
+    <span *ngIf="caracteristicas.precio <= 80"> !Oferta¡</span>
+  </li>
+  
+</ul>
